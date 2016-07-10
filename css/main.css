@@ -1,0 +1,194 @@
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.flex {
+  display: -webkit-box;     
+  display: -moz-box;         
+  display: -ms-flexbox;      
+  display: -webkit-flex;   
+  display: flex; 
+}
+
+.inline-flex {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+/* HEADER CLASS */
+.header-container {
+  width: 100%;
+  background: #E5E5E5;
+  padding: 2rem;
+}
+
+.header-container .title {
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.header-container .name-container {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* ------------ */
+
+/* MAIN CONTAINER */
+.form-container {
+  font-size: 2rem;
+  padding: 3.2rem 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-container .grid-input {
+  width: 100%;
+  text-align: center;
+}
+
+.form-container .grid-input label {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.form-container .grid-input label input {
+  width: 15%;
+}
+
+.form-container .grid-input label input:focus {
+  outline: none;
+}
+
+.form-container .grid-input .submit-button {
+  display: block;
+  margin: 1rem auto;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #333333;
+  font-size: 3rem;
+}
+
+.form-container .grid-input .submit-button:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #F00;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.grid {
+  position: relative;
+}
+
+.grid .card {
+  position : absolute;
+  z-index: 11;
+  box-shadow: #000 -1px 1px 6px;
+}
+
+.grid .card .front {
+  /*font-size: 4rem;*/
+  text-align: center;
+  align-items: center;
+}
+
+.grid .card .front .tick {
+  font-family: sans-serif;
+  position: absolute;
+  font-size: 2rem;
+  color: #23be18;
+  right: 0;
+}
+
+.grid .card .front .cell-text {
+  margin: 0;
+  width: 100%;
+}
+
+/* -------------- */
+
+/* ANIMATION CLASSES */
+.flippedX {
+  -webkit-transform : rotatey(-180deg);
+   -moz-transform: rotatey(-180deg);
+  -o-transform:rotatey(-180deg);
+  -ms-transform:rotatey(-180deg);
+  transform:rotatey(-180deg);
+}
+
+.cardX {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;  
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.faceX {
+  -webkit-backface-visibility: hidden ;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+
+.frontX {
+  position: absolute;
+  z-index: 1;
+}
+
+.backX {
+  -webkit-transform: rotatey(-180deg);
+  -moz-transform: rotatey(-180deg);
+  -o-transform: rotatey(-180deg);
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg);
+}
+
+/* -------------- */
+
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

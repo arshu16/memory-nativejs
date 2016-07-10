@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memory Game</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+      <div class="header-container">
+          <header>
+              <h1 class="title">The Memory Game</h1>
+          </header>
+          <div class="name-container"> 
+            <span id="name"></span>
+          </div>
+      </div>
+      <div class="main-container">
+        <div class="form-container inline-flex">
+          <form class="grid-input" id="grid-form" action="">
+            <label> Can we know your name ? &nbsp; <input type="text" required></label>
+            <label>Enter grid size:&nbsp;<input type="number" name="rows" min="2" oninput="inputChange(this.value, 'row')" required/> &nbsp;X &nbsp;<input type="number" name="columns" min="2" oninput="inputChange(this.value, 'column')" required/></label>
+            <span class="error hidden"> We only accept even matrix</span>
+            <button class="submit-button" type="submit"> Start Game </button>
+          </form>
+        </div>
+
+        <div id="grid-container" class="grid clearfix"></div>
+
+      </div>
+
+      <script src="js/main.js"></script>
+    </body>
+</html>
