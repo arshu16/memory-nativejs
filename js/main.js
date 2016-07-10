@@ -282,7 +282,6 @@ function GameClass(options) {
   this.clickCard = function (back, game) {
     var card = back.parentElement;
     game.flipCard(card, true); 
-
         if (!game.selectedCard) {
             game.selectedCard = card;
             return;   
